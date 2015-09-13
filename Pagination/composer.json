@@ -1,0 +1,17 @@
+{
+    "name": "hkchai/laravel-foundation",
+    "type": "library",
+    "description": "Laravel components for Foundation 5",
+    "license": "MIT",
+    "authors": [
+        {"name": "HK Chai", "email": "hk.chai@gmail.com"}
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelFoundation\\Pagination\\": "src/"
+        }
+    }
+}
