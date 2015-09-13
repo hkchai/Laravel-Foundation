@@ -4,6 +4,8 @@ namespace LaravelFoundation\Pagination;
 
 use Illuminate\Contracts\Pagination\Paginator as PaginatorContract;
 use Illuminate\Contracts\Pagination\Presenter as PresenterContract;
+use Illuminate\Pagination\UrlWindow;
+use Illuminate\Pagination\UrlWindowPresenterTrait;
 
 class FoundationFivePresenter implements PresenterContract
 {
