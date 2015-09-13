@@ -1,7 +1,7 @@
 {
     "name": "hkchai/laravel-foundation",
     "type": "library",
-    "description": "[WIP. Please do not use yet] Foundation 5 components for Laravel 5. For now only Pagination is supported",
+    "description": "[WIP. Please do not use yet]Foundation 5 components for Laravel 5. For now only Pagination is supported",
     "license": "MIT",
     "authors": [
         {"name": "HK Chai", "email": "hk.chai@gmail.com"}
