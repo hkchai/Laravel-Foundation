@@ -1,6 +1,6 @@
 <?php
 
-namespace hkchai\FoundationFivePagination;
+namespace LaravelFoundation\Pagination;
 
 trait FoundationFiveNextPreviousButtonRendererTrait
 {
