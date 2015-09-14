@@ -50,8 +50,8 @@ class SimpleFoundationFivePresenter extends FoundationFivePresenter
                 $this->getNextButton()
             );
 
-            if($this->{'pagination-centered'} == 'true')
-            {                
+            if(isset($this->{'pagination-centered'}) and $this->{'pagination-centered'} == 'true')
+            {
                 return sprintf('<div class="pagination-centered">%s</div>', $tmp_str);
             }
             else {
