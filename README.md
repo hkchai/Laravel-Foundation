@@ -4,11 +4,11 @@
 
 Foundation 5 modules for Laravel 5. This package requires Laravel and Foundation by Zurb as pre-requisites
 
-This package aims to provide support for Foundation by Zurb, for use in Laravel:
+This package aims to provide support for Foundation by Zurb, for use in Laravel.
 
 This has been tested on:
 - Laravel Framework 5.1.16
-- Zurb Foundation 5
+- Foundation 5 by Zurb
 
 
 ## Availability
