@@ -29,9 +29,9 @@ To use this package, we provide you with a Presenter, which you can pass over to
 {!! $data->render(new LaravelFoundation\Pagination\SimpleFoundationFivePresenter($data, [options])) !!}
 ```
 
-### Options
+### Options (Optional)
 
-```pagination-centered```: boolean
+```pagination-centered```: boolean, default to false (i.e. not centered)
 
 #### Example
 ```php
