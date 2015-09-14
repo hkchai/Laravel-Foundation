@@ -2,11 +2,9 @@
 
 ## Introduction
 
-Foundation 5 modules for Laravel 5. Requires Laravel and Foundation as Pre-Reqs
+Foundation 5 modules for Laravel 5. This package requires Laravel and Foundation by Zurb as pre-requisites
 
-Since Laravel only has out-of-box support for BootStrap 3, therefore if you happen to use Zurb Foundation (I do), there will be some additional work needed.
-
-The goal of this package is to bridge the gap for F5 users
+This package aims to provide support for Foundation by Zurb, for use in Laravel:
 
 This has been tested on:
 - Laravel Framework 5.1.16
@@ -19,17 +17,29 @@ The following module(s) are available:
 
 - Pagination: SimplePagination
 
-## Pagination: How to use
+## Pagination:
 
-If you are using BootStrap 3, in the `blade.php` file, suppose your data is called `$data`, you will have `{!! $data->render() !!}` which will render the pagination facility targetting BootStrap 3.
+### Installation
 
-To use this package, we provide you with a Presenter, which you can pass over to `render()`, again, assume your data is `$data`:
+You need to have a working `composer` [https://getcomposer.org]
+
+On the command line, issue `composer require hkchai/laravel-foundation`
+
+### How to use
+
+If you are using BootStrap 3, in the `blade.php` file, assume your data is called `$data`, you should have `{!! $data->render() !!}`, which will render the pagination facility targeting BootStrap 3.
+
+However the default presenter doesn't quite work for Foundation.
+
+This package provides you with a presenter class that generates correct HTML for Foundation 5.
+
+Again assuming your data is `$data`, here is how you invoke this package:
 
 ```php
 {!! $data->render(new LaravelFoundation\Pagination\SimpleFoundationFivePresenter($data, [options])) !!}
 ```
 
-### Options (Optional)
+### Optional Options
 
 ```pagination-centered```: boolean, default to false (i.e. not centered)
 

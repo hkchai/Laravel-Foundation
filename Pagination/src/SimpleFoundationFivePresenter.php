@@ -10,6 +10,7 @@ class SimpleFoundationFivePresenter extends FoundationFivePresenter
      * Create a simple Foundation 5 presenter.
      *
      * @param  \Illuminate\Contracts\Pagination\Paginator  $paginator
+     * @param  array $options
      * @return void
      */
     public function __construct(PaginatorContract $paginator, $options = [])
@@ -54,7 +55,8 @@ class SimpleFoundationFivePresenter extends FoundationFivePresenter
             {
                 return sprintf('<div class="pagination-centered">%s</div>', $tmp_str);
             }
-            else {
+            else
+            {
                 return $tmp_str;
             }
 
