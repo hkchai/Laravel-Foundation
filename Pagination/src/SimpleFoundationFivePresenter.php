@@ -12,9 +12,18 @@ class SimpleFoundationFivePresenter extends FoundationFivePresenter
      * @param  \Illuminate\Contracts\Pagination\Paginator  $paginator
      * @return void
      */
-    public function __construct(PaginatorContract $paginator)
+    public function __construct(PaginatorContract $paginator, $options = [])
     {
         $this->paginator = $paginator;
+
+        /*
+         *  Processing options
+         */
+
+         foreach($options as $key => $value)
+         {
+             $this->{$key} = $value;
+         }
     }
 
     /**
@@ -35,11 +44,20 @@ class SimpleFoundationFivePresenter extends FoundationFivePresenter
     public function render()
     {
         if ($this->hasPages()) {
-            return sprintf(
+            $tmp_str =  sprintf(
                 '<ul class="pagination">%s %s</ul>',
                 $this->getPreviousButton(),
                 $this->getNextButton()
             );
+
+            if($this->{'pagination-centered'} == 'true')
+            {                
+                return sprintf('<div class="pagination-centered">%s</div>', $tmp_str);
+            }
+            else {
+                return $tmp_str;
+            }
+
         }
 
         return '';
