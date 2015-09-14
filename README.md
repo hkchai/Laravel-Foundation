@@ -19,15 +19,21 @@ The following module(s) are available:
 
 - Pagination: SimplePagination
 
-## How to use
+## Pagination: How to use
 
 If you are using BootStrap 3, in the `blade.php` file, suppose your data is called `$data`, you will have `{!! $data->render() !!}` which will render the pagination facility targetting BootStrap 3.
 
 To use this package, we provide you with a Presenter, which you can pass over to `render()`, again, assume your data is `$data`:
 
 ```php
-{!! $data->render(new LaravelFoundation\Pagination\SimpleFoundationFivePresenter($data)) !!}
+{!! $data->render(new LaravelFoundation\Pagination\SimpleFoundationFivePresenter($data, [options])) !!}
 ```
 
+### Options
 
+```pagination-centered```: boolean
 
+#### Example
+```php
+{!! $data->render(new LaravelFoundation\Pagination\SimpleFoundationFivePresenter($data, ["pagination-centered"=>'true'])) !!}
+```
