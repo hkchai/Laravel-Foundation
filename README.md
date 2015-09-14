@@ -8,7 +8,7 @@ This package aims to provide support for Foundation by Zurb, for use in Laravel.
 
 This has been tested on:
 - Laravel Framework 5.1.16
-- Foundation 5 by Zurb
+- Foundation 5.5.2
 
 
 ## Availability
