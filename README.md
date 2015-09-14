@@ -13,9 +13,10 @@ This has been tested on:
 - Zurb Foundation 5
 
 
-## Scope
+## Availability
 
-Available Module(s):
+The following module(s) are available:
+
 - Pagination: SimplePagination
 
 ## How to use
